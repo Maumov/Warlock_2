@@ -32,6 +32,21 @@ public class GearSelection : MonoBehaviour
         SetLegs(0);
     }
 
+    public int currentArmor;
+    [ContextMenu("Next")]
+    public void TestNextArmor() {
+        SetShoulder(currentArmor);
+        SetKnee(currentArmor);
+        SetHead(currentArmor);
+        SetTorso(currentArmor);
+        SetHips(currentArmor);
+        SetAU(currentArmor);
+        SetAL(currentArmor);
+        SetH(currentArmor);
+        SetLegs(currentArmor);
+    }
+
+
     public void SetHelmet1(int value) {
         helmet1.SetToValue(value);
     }
